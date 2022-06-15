@@ -4,8 +4,11 @@ import {AiOutlineDown} from "react-icons/Ai"
 import {AiFillHeart,AiOutlineSearch} from "react-icons/Ai"
 import {HiOutlineShoppingBag} from "react-icons/Hi"
 import "./Navbar.css"
+import { useState } from 'react';
+import {Dropdown} from "./Dropdown"
 
 export const Navbar = ()=>{
+    const [dropdown,setDropdown] = useState(false)
     return(
         <div>
           <Box className='nav-top'>
@@ -19,7 +22,7 @@ export const Navbar = ()=>{
                 FREE Express International Delivery + Easy returns
             </Box>
             <Box className='nav-top-right'>
-                <Box> Sign In/ Register</Box>
+                <Box onClick={()=>setDropdown(!dropdown)} > Sign In/ Register {dropdown && <Dropdown/>} </Box>
                 <Box><AiFillHeart color='red' size='15px' /></Box>
                 <Box><HiOutlineShoppingBag size='15px' /></Box>
                

@@ -30,6 +30,9 @@
     flex-wrap: wrap;
     gap: 5px;
 }
+.nav-top-right>:nth-child(1){
+    cursor: pointer;
+}
 
 .nav-box{
     width: 100%;
