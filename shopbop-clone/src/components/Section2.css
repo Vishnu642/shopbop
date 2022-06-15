@@ -1,0 +1,79 @@
+
+.pink-container{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(252, 238, 240);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pink-box{
+    width: 900px;
+   
+}
+
+.pink-heading{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.head-left>p{
+    font-weight: 400;
+}
+.head-left>h1{
+    font-size: 20px;
+}
+
+.pink-category{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.pink-div{
+    width:  15%;
+    height: 350px;
+}
+.pink-img{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.shopping{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.shop-heading{
+    width: 400px;
+    height: 60px;
+    background-image: url("https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_03/sb_20220309_desktop_M1_evergreen._FMwebp_UX1500_.jpg");
+
+}
+
+.shop{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.shop-div{
+    width: 300px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
