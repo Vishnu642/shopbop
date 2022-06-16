@@ -77,3 +77,19 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.section1-button{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: tomato;
+    border: 1px solid  tomato ;
+    margin-bottom: 50px;
+    
+}
+
+.section1-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

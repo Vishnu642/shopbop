@@ -38,8 +38,8 @@ export const Section2 =()=>{
                 </Box>
             </Box>
 
-            <Box w="100%" backgroundSize="cover" backgroundRepeat="no-repeat" h="450px" bgImg="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/desktop/lookbooks/2022/2022_06/sb_20220615_desktop_LB_mother_01_1-0.jpg" >
-
+            <Box className="section1-bg" w="100%" backgroundSize="cover" backgroundRepeat="no-repeat" h="450px" bgImg="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/desktop/lookbooks/2022/2022_06/sb_20220615_desktop_LB_mother_01_1-0.jpg" >
+            <button className="section1-button" >Shop Now</button>
             </Box>
 
 
