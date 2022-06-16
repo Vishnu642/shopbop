@@ -9,14 +9,16 @@ import Accessories from "./components/Accessories"
 import Bags from "./components/Bags"
 import Mens from "./components/Mens"
 import Womens from "./components/Womens"
-import SignupCard from "./pages/SignIn"
+import {SimpleCard} from "./pages/SignIn"
+import SignupCard from "./pages/SignUp"
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       {/* <Navbar/>  */}
-    <SignupCard/>
+      <SignupCard/>
+    {/* <SimpleCard/> */}
        {/* <Section1/>
        <Section2/>  */}
       {/* <Accessories/> */}
