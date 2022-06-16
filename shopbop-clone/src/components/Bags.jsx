@@ -1,10 +1,10 @@
 import {Box,Select} from "@chakra-ui/react"
-import "./Accessories.css"
+import "./Bags.css"
 import axios from "axios"
 import { useState,useEffect } from "react"
 
 
-function Accessories(){
+function Bags(){
 
 
     const [loading,setLoading] = useState(true);
@@ -22,7 +22,7 @@ function Accessories(){
    
     axios({
       method:"GET",
-      url:" http://localhost:8050/accessories",
+      url:" http://localhost:8050/bag",
     //   params:{
     //     _page:page,
     //     _limit:5,
@@ -51,7 +51,7 @@ function Accessories(){
         <Box className="product-container" >
              
             <Box className="product-left" >
-              <Box marginLeft="60px" ><h1 style={{padding:"10px"}} >Accessories</h1><hr></hr></Box>
+              <Box marginLeft="60px" ><h1 style={{padding:"10px"}} >Bags</h1><hr></hr></Box>
               
               <Box marginLeft="60px" ><h3>Catogory</h3></Box>
               <Box marginLeft="60px" >
@@ -100,4 +100,4 @@ function Accessories(){
     )
 }
 
-export default Accessories;
+export default Bags;

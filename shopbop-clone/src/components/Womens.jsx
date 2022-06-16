@@ -1,11 +1,10 @@
 import {Box,Select} from "@chakra-ui/react"
-import "./Accessories.css"
+import "./Womens.css"
 import axios from "axios"
 import { useState,useEffect } from "react"
 
 
-function Accessories(){
-
+function Womens(){
 
     const [loading,setLoading] = useState(true);
   const [error,setError] = useState(false);
@@ -22,7 +21,7 @@ function Accessories(){
    
     axios({
       method:"GET",
-      url:" http://localhost:8050/accessories",
+      url:" http://localhost:8050/mens",
     //   params:{
     //     _page:page,
     //     _limit:5,
@@ -51,18 +50,18 @@ function Accessories(){
         <Box className="product-container" >
              
             <Box className="product-left" >
-              <Box marginLeft="60px" ><h1 style={{padding:"10px"}} >Accessories</h1><hr></hr></Box>
+              <Box marginLeft="60px" ><h1 style={{padding:"10px"}} >Womens</h1><hr></hr></Box>
               
               <Box marginLeft="60px" ><h3>Catogory</h3></Box>
               <Box marginLeft="60px" >
-                <h4>All Jewelry & Accessories</h4>
-                <p>Jewelry</p>
-                <p>Fine Jewelry</p>
-                <p>Watches</p>
-                <p>Active Accessories</p>
-                <p>Belts</p>
-                <p>Gloves</p>
-                <p>Hair Accessories</p>
+                <h4>All Dresses</h4>
+                <p>Shirt</p>
+                <p>Trousers</p>
+                <p>Denim</p>
+                <p>Shorts</p>
+                <p>T shirts</p>
+                <p>Jacket</p>
+                <p>Inners</p>
               </Box>
               <Box>
                 <Box marginLeft="60px" ><h2>Filter</h2></Box>
@@ -86,8 +85,8 @@ function Accessories(){
           {loading && <div>...loading</div>}
           </Box>
     {data.map((item)=>(
-        <Box className="product-div">
-          <Box className="pro-img" ><img src={item.imgURL} width="100%" height="100%" ></img></Box>
+        <Box className="product-div" key={item.id} >
+          <Box className="pro-img" ><img src={item.itemImg} width="100%" height="100%" ></img></Box>
           <Box className="pro-txt" ><p>{item.title}<br></br>{item.name}<br></br><br></br>{item.price}</p></Box>
           <Box className="pro-button" ><button style={{padding:"7px",color:"white",background:"tomato",borderRadius:"5px"}} >Add to Cart</button></Box>
         </Box>
@@ -100,4 +99,4 @@ function Accessories(){
     )
 }
 
-export default Accessories;
+export default Womens;

@@ -6,6 +6,9 @@ import {Footer} from "./components/Footer"
 // import {Section1} from "./components/Section1"
 // import {Section2} from "./components/Section2"
 import Accessories from "./components/Accessories"
+import Bags from "./components/Bags"
+import Mens from "./components/Mens"
+import Womens from "./components/Womens"
 function App() {
   const [count, setCount] = useState(0)
 
@@ -14,7 +17,10 @@ function App() {
       <Navbar/> 
       {/* <Section1/>
       <Section2/> */}
-      <Accessories/>
+      {/* <Accessories/> */}
+      {/* <Bags/> */}
+      {/* <Mens/> */}
+      <Womens/>
       <Footer/>
     </div>
   )

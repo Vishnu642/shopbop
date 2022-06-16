@@ -540,5 +540,63 @@
       "price":"$385.00",
       "imgURL":"https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/amiii/amiii3080512642/amiii3080512642_1645196429597_2-0._SH20_QL90_UY365_.jpg"
     }
+  ],
+  "womens":[
+    {
+      "itemImg":
+        "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ragbo/ragbo4587610328/ragbo4587610328_1645215598895_2-0._QL90_UX207_.jpg",
+      "title": "Reg & Bone",
+      "name": "Liana Cardigan",
+      "price": "359.00",
+      "id":1
+    },
+    {
+      "itemImg":
+        "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/mothr/mothr215131733b/mothr215131733b_1645465122812_2-0._QL90_UX207_.jpg",
+        "title": "MOTHER",
+        "name": "High Waisterd Rider Ank...",
+        " price": "198.00",
+        "id":2
+    },
+    {
+      "itemImg":
+        "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/loeff/loeff4191214a9b/loeff4191214a9b_1645222764978_2-0._QL90_UX207_.jpg",
+        "title": "Loeffler Randall",
+        "name": "Willa Bag",
+        "price": "295.00",
+        "id":3
+    },
+    {
+        "itemImg":
+        "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/rebec/rebec426021af4f/rebec426021af4f_1645216369565_2-0._QL90_UX207_.jpg",
+        "title": "Redecca Taylor",
+        "name": "Popover Dress",
+        "price": "265.00",
+        "id":4
+    },
+    {
+        "itemImg":
+        "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/ismdb/ismdb308411c5f0/ismdb308411c5f0_1645223941168_2-0._QL90_UX207_.jpg",
+        "title": "Lsabel Marant",
+        "name": "Elham Sandals",
+        "price": "790.00",
+        "id":5
+    },
+    {
+        "itemImg":
+        "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/rebec/rebec426061d360/rebec426061d360_1645459846835_2-0._QL90_UX207_.jpg",
+        "title": "Rebecca Taylor",
+        "type": "Poplin Jumpsuit",
+        "price": "395.00",
+        "id":6
+    },
+    {
+        "itemImg":
+        "https://m.media-amazon.com/images/G/01/Shopbop/p/prod/products/gamer/gamer304431d3ca/gamer304431d3ca_1645464383960_2-0._QL90_UX207_.jpg",
+        "title": "Good American",
+        "name": "Modern Tank Thong Bodysuit.",
+        "price": "65.00",
+        "id":7
+    }
   ]
 }
