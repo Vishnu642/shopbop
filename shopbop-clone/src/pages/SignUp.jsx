@@ -12,19 +12,20 @@ import {
     Heading,
     Text,
     useColorModeValue,
-    Link,
+    
   } from '@chakra-ui/react';
   import { useState } from 'react';
-  
+  import { Link } from 'react-router-dom';
+  import "./SignUp.css"
   
   export default function SignupCard() {
     const [showPassword, setShowPassword] = useState(false);
   
     return (
-    <Box w="500px" h="500px" border="1px solid black" boxShadow=" rgba(0, 0, 0, 0.35) 0px 5px 15px" >
+    <Box w="500px" h="600px" borderRadius="10px" margin="auto"  boxShadow=" rgba(0, 0, 0, 0.35) 0px 5px 15px" >
       <Flex
       cursor="pointer"
-        minH={'100vh'}
+      
         align={'center'}
         justify={'center'}
         
@@ -78,20 +79,23 @@ import {
                 </InputGroup>
               </FormControl>
               <Stack spacing={10} pt={2}>
-                <Button
+               <Link to="/signin" > <Button
                   loadingText="Submitting"
                   size="lg"
                   bg='blue'
                   color='white'
+                  w="400px"
                   h="50px"
+                  margin="auto"
                   cursor="pointer"
+                  className='signin'
                   >
                   Sign up
-                </Button>
+                </Button></Link>
               </Stack>
               <Stack pt={6}>
                 <Text align={'center'}>
-                  Already a user? <Link color='blue' cursor="pointer" >Login</Link>
+                  Already a user? <Link to="/signin" color='blue' cursor="pointer" className='login' >Login</Link>
                 </Text>
               </Stack>
             </Stack>

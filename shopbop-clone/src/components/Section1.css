@@ -100,12 +100,11 @@
 }
 
 .section1-button{
-    cursor: pointer;
     width: 200px;
     height: 60px;
     color: white;
     background-color: tomato;
-    border: 1px solid  tomato ;
+    border: 1px solid  tomato ; 
     /* margin-bottom: 50px;
     margin-left: 80px; */
 }

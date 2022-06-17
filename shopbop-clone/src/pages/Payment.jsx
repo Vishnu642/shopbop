@@ -1,8 +1,11 @@
 import {Box} from "@chakra-ui/react"
 import "./Cart.css"
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
 export const Payment = ()=>{
+
+    const navigate = useNavigate()
 
     let data = JSON.parse(localStorage.getItem("cart"))
     console.log(data);
@@ -56,9 +59,7 @@ export const Payment = ()=>{
                     <h4 style={{marginLeft:"10px"}} >{item.price}</h4>
                     <p>{item.color}</p>
                     <p>{item.size}</p>
-                <button
-                className="section1-button" 
-                 style={{padding:"5px",marginLeft:"10px",cursor:"pointer"}}  onClick={()=>removeItem(item.id)}>Delete</button>
+               
                 </div>
                 
               </div>
@@ -92,6 +93,7 @@ export const Payment = ()=>{
            <button
            onClick={()=>{
             alert("Order has been placed successfuly")
+            navigate("/")
            }}
            
            style={{cursor:"pointer",backgroundColor:"tomato",color:"white",border:"1px solid tomato",fontSize:"18px",padding:"5px",width:"200px",height:"50px"}} >

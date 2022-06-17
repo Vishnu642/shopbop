@@ -6,17 +6,17 @@ import {
     Input,
     Checkbox,
     Stack,
-    Link,
     Button,
     Heading,
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
+  import { Link } from 'react-router-dom';
   
   export const SimpleCard=()=> {
     return (
+      <Box w="500px" h="450px" borderRadius="10px" margin="auto"  boxShadow=" rgba(0, 0, 0, 0.35) 0px 5px 15px" >
       <Flex
-        minH={'100vh'}
         align={'center'}
         justify={'center'}
         bg={useColorModeValue('gray.50', 'gray.800')}>
@@ -24,7 +24,7 @@ import {
           <Stack align={'center'}>
             <Heading fontSize="30px">Sign in to your account</Heading>
             <Text fontSize="20px" color={'gray.600'}>
-              to enjoy all of our cool <Link color={'blue.400'}>features</Link> ✌️
+              to enjoy all of our cool features ✌️
             </Text>
           </Stack>
           <Box
@@ -47,19 +47,23 @@ import {
                   align={'start'}
                   justify={'space-between'}>
                   <Checkbox fontSize="15px" >Remember me</Checkbox>
-                  <Link fontSize="15px" color="blue">Forgot password?</Link>
+                  <Link to="/signup" fontSize="15px" color="blue">Forgot password?</Link>
                 </Stack>
-                <Button
+               <Link to="/" > <Button
                   bg="blue"
                   color='white'
+                  w="400px"
                     h="50px"
+                    margin="auto"
+                    cursor="pointer"
                   >
                   Sign in
-                </Button>
+                </Button></Link>
               </Stack>
             </Stack>
           </Box>
         </Stack>
       </Flex>
+      </Box>
     );
   }

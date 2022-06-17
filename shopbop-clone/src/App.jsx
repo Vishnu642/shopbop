@@ -12,6 +12,8 @@ import {SimpleCard} from "./pages/SignIn"
 import SignupCard from "./pages/SignUp"
 import {Cart} from "./pages/Cart"
 import {Payment} from "./pages/Payment"
+import { AllRoutes } from './pages/AllRoutes'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -19,7 +21,7 @@ function App() {
     <div className="App">
       <Navbar/> 
       {/* <SignupCard/> */}
-    {/* <SimpleCard/> */}
+      {/* <SimpleCard/> */}
       {/* <Homepage/> */}
       {/* <Accessories/> */}
       {/* <Bags/> */}
@@ -27,7 +29,8 @@ function App() {
       {/* <Womens/> */}
       {/* <Cart/> */}
       {/* <Payment/> */}
-      {/* <Footer/> */}
+      <AllRoutes/>
+      <Footer/>
     </div>
   )
 }

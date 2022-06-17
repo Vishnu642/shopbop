@@ -1,6 +1,7 @@
 import {Box} from "@chakra-ui/react"
 import "./Cart.css"
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export const Cart = ()=>{
 
@@ -58,7 +59,7 @@ export const Cart = ()=>{
                     <p>{item.size}</p>
                 <button
                 className="section1-button" 
-                 style={{padding:"5px",marginLeft:"10px"}}  onClick={()=>removeItem(item.id)}>Delete</button>
+                 style={{padding:"5px",marginLeft:"10px",cursor:"pointer"}}  onClick={()=>removeItem(item.id)}>Delete</button>
                 </div>
                 
               </div>
@@ -95,8 +96,8 @@ export const Cart = ()=>{
             <h3>${totalp}</h3>
           </div>
           <div  style={{display:"flex",justifyContent:"center"}} >
-           <button style={{backgroundColor:"tomato",color:"white",border:"1px solid tomato",fontSize:"18px",padding:"5px",width:"200px",height:"50px"}} >
-            Checkout</button>
+           <Link to="/payment" ><button style={{backgroundColor:"tomato",color:"white",border:"1px solid tomato",fontSize:"18px",padding:"5px",width:"200px",height:"50px",cursor:"pointer"}} >
+            Checkout</button></Link>
           </div>
           <div >
            
