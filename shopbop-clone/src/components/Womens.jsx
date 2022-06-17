@@ -95,7 +95,7 @@ function Womens(){
           <Box className="pro-txt" ><p>{item.title}<br></br>{item.name}<br></br><br></br>{item.price}</p></Box>
           <Box className="pro-button" ><button 
            onClick={()=>handleClick(item)} 
-          style={{padding:"7px",color:"white",background:"tomato",borderRadius:"5px"}} >Add to Cart</button></Box>
+          style={{padding:"7px",color:"white",background:"tomato",borderRadius:"5px",cursor:"pointer"}} >Add to Cart</button></Box>
         </Box>
     ))}
 
