@@ -24,10 +24,10 @@ function App() {
       {/* <Accessories/> */}
       {/* <Bags/> */}
       {/* <Mens/> */}
-      <Womens/>
+      {/* <Womens/> */}
       {/* <Cart/> */}
       {/* <Payment/> */}
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   )
 }

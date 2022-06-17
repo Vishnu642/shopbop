@@ -57,3 +57,12 @@
     gap: 15px;
 
 }
+
+.nav-line{
+    text-decoration: none;
+    color: black;
+}
+.nav-line:focus{
+    text-decoration: underline;
+}
+
