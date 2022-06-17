@@ -11,13 +11,14 @@ import Mens from "./components/Mens"
 import Womens from "./components/Womens"
 import {SimpleCard} from "./pages/SignIn"
 import SignupCard from "./pages/SignUp"
+import {Cart} from "./pages/Cart"
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className="App">
       {/* <Navbar/>  */}
-      <SignupCard/>
+      {/* <SignupCard/> */}
     {/* <SimpleCard/> */}
        {/* <Section1/>
        <Section2/>  */}
@@ -25,6 +26,7 @@ function App() {
       {/* <Bags/> */}
       {/* <Mens/> */}
       {/* <Womens/> */}
+      <Cart/>
       {/* <Footer/> */}
     </div>
   )
