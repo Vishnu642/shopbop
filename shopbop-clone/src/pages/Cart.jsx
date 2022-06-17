@@ -66,7 +66,7 @@ export const Cart = ()=>{
           })}
                     </Box>
                 </Box>
-                <Box className="cart-right" >
+                <Box bg="white" className="cart-right" >
 
 
                 <div >
