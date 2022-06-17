@@ -23,8 +23,8 @@ export const Navbar = ()=>{
             </Box>
             <Box className='nav-top-right'>
                 <Box onClick={()=>setDropdown(!dropdown)} > Sign In/ Register {dropdown && <Dropdown/>} </Box>
-                <Box><AiFillHeart color='red' size='15px' /></Box>
-                <Box><HiOutlineShoppingBag size='15px' /></Box>
+                <Box><AiFillHeart color='red' size='20px' /></Box>
+                <Box><HiOutlineShoppingBag size='20px' /></Box>
                
             </Box>
           </Box>

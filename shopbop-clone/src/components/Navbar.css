@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
 }
 .nav-top-right>:nth-child(1){
     cursor: pointer;

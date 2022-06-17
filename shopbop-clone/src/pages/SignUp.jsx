@@ -21,13 +21,13 @@ import {
     const [showPassword, setShowPassword] = useState(false);
   
     return (
-    
+    <Box w="500px" h="500px" border="1px solid black" boxShadow=" rgba(0, 0, 0, 0.35) 0px 5px 15px" >
       <Flex
       cursor="pointer"
         minH={'100vh'}
         align={'center'}
         justify={'center'}
-        boxShadow=" rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+        
         >
         <Stack spacing={8} mx={'auto'} maxW={'lg'} py={12} px={6}>
           <Stack align={'center'}>
@@ -98,5 +98,6 @@ import {
           </Box>
         </Stack>
       </Flex>
+      </Box>
     );
   }

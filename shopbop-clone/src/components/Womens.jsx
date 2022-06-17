@@ -21,7 +21,7 @@ function Womens(){
    
     axios({
       method:"GET",
-      url:" http://localhost:8050/mens",
+      url:" http://localhost:8050/womens",
     //   params:{
     //     _page:page,
     //     _limit:5,
@@ -43,6 +43,11 @@ function Womens(){
   }
 
   console.log(data)
+  var cart = JSON.parse(localStorage.getItem("cart"))|| [];
+  const handleClick=(ele)=>{
+    cart.push(ele);
+    localStorage.setItem("cart",JSON.stringify(cart));
+  }
 
 
 
@@ -86,9 +91,11 @@ function Womens(){
           </Box>
     {data.map((item)=>(
         <Box className="product-div" key={item.id} >
-          <Box className="pro-img" ><img src={item.itemImg} width="100%" height="100%" ></img></Box>
+          <Box className="pro-img" ><img src={item.imgURL} width="100%" height="100%" ></img></Box>
           <Box className="pro-txt" ><p>{item.title}<br></br>{item.name}<br></br><br></br>{item.price}</p></Box>
-          <Box className="pro-button" ><button style={{padding:"7px",color:"white",background:"tomato",borderRadius:"5px"}} >Add to Cart</button></Box>
+          <Box className="pro-button" ><button 
+           onClick={()=>handleClick(item)} 
+          style={{padding:"7px",color:"white",background:"tomato",borderRadius:"5px"}} >Add to Cart</button></Box>
         </Box>
     ))}
 

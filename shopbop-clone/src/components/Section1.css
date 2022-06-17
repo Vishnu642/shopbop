@@ -93,21 +93,24 @@
     align-items: center;
 }
 
-.section1-button{
-    width: 150px;
-    height: 50px;
-    color: white;
-    background-color: tomato;
-    border: 1px solid  tomato ;
-    margin-bottom: 50px;
-    margin-left: 80px;
-}
-
 .section1-bg{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
 }
+
+.section1-button{
+    cursor: pointer;
+    width: 200px;
+    height: 60px;
+    color: white;
+    background-color: tomato;
+    border: 1px solid  tomato ;
+    /* margin-bottom: 50px;
+    margin-left: 80px; */
+}
+
+
 .overlap-box{
     background-color: rgb(193, 248, 248);
 }

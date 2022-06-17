@@ -19,6 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 
 }
 .head-left>p{
@@ -35,6 +36,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 
 .pink-div{
@@ -89,6 +91,7 @@
 }
 
 .section1-bg{
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;

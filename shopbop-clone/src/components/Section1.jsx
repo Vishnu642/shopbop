@@ -6,7 +6,7 @@ export const Section1 = ()=>{
     return(
         <Box>
             <Box className="section1-bg" h='450px' backgroundSize='cover' backgroundRepeat='no-repeat' w='100%' bgImg="https://m.media-amazon.com/images/G/01/Shopbop/p/pcs/shopbop/media/desktop/lookbooks/2022/2022_06/sb_20220613_desktop_LB_beachshop_10_1-0.jpg" >
-                <button className="section1-button" >Shop Now</button>
+                <button   className="section1-button" >Shop Now</button>
             </Box>
             <Box className="category-box" >
                 <Box className="cat-div" bgImg="https://m.media-amazon.com/images/G/01//Shopbop/media/desktop/homepages/2022/2022_06/sb_20220613_hp_card_visnav_beachshop_02._QL90_UX373_.jpg" ></Box>

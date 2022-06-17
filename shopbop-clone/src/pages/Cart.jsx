@@ -69,41 +69,39 @@ export const Cart = ()=>{
                 <Box bg="white" className="cart-right" >
 
 
-                <div >
+                <div style={{padding:"10px"}}  >
           <div>
             <h2>Order Summary</h2>
           </div>
-          <div>
-            <p>Products</p>
-            <p>${totalp}</p>
+          <div style={{display:"flex",justifyContent:"space-between"}} >
+            <h4>Products</h4>
+            <p style={{fontSize:"18px",fontWeight:"400"}} >${totalp}</p>
           </div>
-          <div>
-            <p>Shipping and Handling</p>
-            <p>FREE</p>
+          <div style={{display:"flex",justifyContent:"space-between"}} >
+            <h4>Shipping and Handling</h4>
+            <p style={{fontSize:"18px",fontWeight:"400"}} >FREE</p>
           </div>
-          <div>
-            <p>Promo Code</p>
+          <div style={{display:"flex",justifyContent:"center"}} >
+            <h4>Promo Code</h4>
           </div>
-          <div >
-            <input type="text" />
-            <button>Apply</button>
+          <div style={{display:"flex",justifyContent:"center"}} >
+            <input style={{border:"1px solid black"}} type="text" />
+            <button style={{backgroundColor:"black",color:"white",border:"1px solid black",fontSize:"18px",padding:"5px"}} >Apply</button>
           </div>
-          <div >
+          <div style={{display:"flex",justifyContent:"space-between"}} >
             <h3>
-              Subtotal<span>(before taxes)</span>
+              Subtotal
             </h3>
             <h3>${totalp}</h3>
           </div>
-          <div >
-           <button>Checkout</button>
+          <div  style={{display:"flex",justifyContent:"center"}} >
+           <button style={{backgroundColor:"tomato",color:"white",border:"1px solid tomato",fontSize:"18px",padding:"5px",width:"200px",height:"50px"}} >
+            Checkout</button>
           </div>
           <div >
-            <img
-              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxkZWZzPjxwYXRoIGlkPSJhIiBkPSJNMCAwaDUwdjUwSDB6Ii8+PC9kZWZzPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+PGc+PG1hc2sgaWQ9ImIiIGZpbGw9IiNmZmYiPjx1c2UgeGxpbms6aHJlZj0iI2EiLz48L21hc2s+PHBhdGggZD0iTTUwIDI1YzAgMTMuODA2LTExLjE5NSAyNS0yNSAyNVMwIDM4LjgwNyAwIDI1QzAgMTEuMTk0IDExLjE5NSAwIDI1IDBzMjUgMTEuMTkzIDI1IDI1IiBmaWxsPSIjRkZFN0RCIiBtYXNrPSJ1cmwoI2IpIi8+PC9nPjxwYXRoIGQ9Ik0yMi44OTcgMzkuMDA4aDYuMzY5di01LjY1NWgtNi4zN3Y1LjY1NXptLS4xMi0yNi43ODZoNi42NjdsLS45ODkgMTguMjE1aC00LjY4OGwtLjk5LTE4LjIxNXoiIGZpbGw9IiNGRkNCQjEiLz48cGF0aCBkPSJNMjcuNiAzMS4xMzFjLjMwNiAwIC41NTUuMjQ5LjU1NS41NTZ2NS42NTRhLjU1Ni41NTYgMCAwMS0uNTU2LjU1NkgyMS4yM2EuNTU2LjU1NiAwIDAxLS41NTUtLjU1NnYtNS42NTRjMC0uMzA3LjI0OC0uNTU2LjU1NS0uNTU2aDYuMzd6bS0uNTU2IDEuMTExaC01LjI1OHY0LjU0NGg1LjI1OHYtNC41NDR6TTI3Ljc3OCAxMGMuMzE4IDAgLjU3Mi4yNjcuNTU1LjU4NmwtLjk5IDE4LjIxNGEuNTU2LjU1NiAwIDAxLS41NTQuNTI1SDIyLjFhLjU1Ni41NTYgMCAwMS0uNTU1LS41MjVsLS45ODktMTguMjE0YS41NTYuNTU2IDAgMDEuNTU1LS41ODZoNi42Njd6bS02LjA4IDEuMTExbC45MjggMTcuMTAzaDMuNjM3bC45MjgtMTcuMTAzaC01LjQ5M3oiIGZpbGw9IiMwMDAiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvZz48L3N2Zz4="
-              alt="i"
-            />
+           
             <div>
-              <h4>Additional Fees May Apply</h4>
+              <h4>Additional fees may apply</h4>
               <p>Shipping Options, Import Fees and Return Fees</p>
             </div>
           </div>
