@@ -40,3 +40,9 @@
 .black:hover{
     color: #007e8f;
 }
+
+.account{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}

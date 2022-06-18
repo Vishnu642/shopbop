@@ -1,5 +1,6 @@
 import "./Dropdown.css";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 
 export const Dropdown = () => {
@@ -9,7 +10,7 @@ export const Dropdown = () => {
     onClick={() => {
       setDropdown(!dropdown);
     }} >
-      <p>Account</p>
+      <Link to="/signup" ><p className="account" >Account</p></Link>
       <p>Orders</p>
       <p>My Loyalty</p>
       <p>My Reviews</p>

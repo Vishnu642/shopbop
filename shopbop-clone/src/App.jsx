@@ -14,6 +14,7 @@ import {Cart} from "./pages/Cart"
 import {Payment} from "./pages/Payment"
 import { AllRoutes } from './pages/AllRoutes'
 
+
 function App() {
   const [count, setCount] = useState(0)
 
